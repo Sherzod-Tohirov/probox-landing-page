@@ -1,0 +1,37 @@
+<svg width="400" height="220" viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="220" fill="#f8fafc"/>
+  <!-- Background -->
+  <rect width="400" height="220" fill="url(#boxBg)"/>
+  <!-- iPhone box left -->
+  <rect x="80" y="50" width="90" height="140" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="80" y="50" width="90" height="40" rx="6" fill="#1e293b"/>
+  <rect x="80" y="80" width="90" height="10" rx="0" fill="#1e293b"/>
+  <!-- Apple logo on box -->
+  <circle cx="125" cy="68" r="10" fill="white" opacity="0.2"/>
+  <text x="119" y="73" font-size="14" fill="white" font-family="Arial">🍎</text>
+  <!-- iPhone box text lines -->
+  <rect x="95" y="105" width="60" height="5" rx="2.5" fill="#94a3b8"/>
+  <rect x="100" y="116" width="50" height="4" rx="2" fill="#cbd5e1"/>
+  <rect x="105" y="127" width="40" height="4" rx="2" fill="#cbd5e1"/>
+  <!-- Second box slightly offset -->
+  <rect x="195" y="40" width="100" height="150" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="195" y="40" width="100" height="45" rx="6" fill="#0f172a"/>
+  <rect x="195" y="75" width="100" height="10" rx="0" fill="#0f172a"/>
+  <!-- Apple logo on second box -->
+  <circle cx="245" cy="60" r="12" fill="white" opacity="0.15"/>
+  <text x="239" y="67" font-size="16" fill="white" font-family="Arial">🍎</text>
+  <!-- Second box content -->
+  <rect x="210" y="100" width="70" height="5" rx="2.5" fill="#94a3b8"/>
+  <rect x="215" y="112" width="60" height="4" rx="2" fill="#cbd5e1"/>
+  <rect x="220" y="123" width="50" height="4" rx="2" fill="#cbd5e1"/>
+  <!-- Small iPhone in front -->
+  <rect x="230" y="130" width="50" height="90" rx="8" fill="#1e293b" opacity="0.9"/>
+  <rect x="235" y="136" width="40" height="72" rx="6" fill="#0f172a"/>
+  <rect x="244" y="140" width="22" height="7" rx="3.5" fill="#1e293b"/>
+  <defs>
+    <linearGradient id="boxBg" x1="0" y1="0" x2="400" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+  </defs>
+</svg>

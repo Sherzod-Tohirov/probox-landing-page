@@ -1,0 +1,30 @@
+<svg width="280" height="340" viewBox="0 0 280 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- iPhone body -->
+  <rect x="20" y="8" width="240" height="324" rx="36" fill="#C0A080"/>
+  <rect x="20" y="8" width="240" height="324" rx="36" fill="url(#iphoneGrad)"/>
+  <!-- Screen -->
+  <rect x="32" y="28" width="216" height="284" rx="28" fill="#0a0a0a"/>
+  <!-- Dynamic Island -->
+  <rect x="106" y="38" width="68" height="22" rx="11" fill="#1a1a1a"/>
+  <!-- Screen content -->
+  <rect x="44" y="72" width="192" height="228" rx="4" fill="#1e3a8a"/>
+  <!-- Probox logo on screen -->
+  <rect x="104" y="160" width="72" height="72" rx="10" fill="#1a56db"/>
+  <rect x="114" y="170" width="22" height="22" rx="4" fill="white"/>
+  <rect x="140" y="170" width="22" height="22" rx="4" fill="white" opacity="0.6"/>
+  <rect x="114" y="196" width="22" height="22" rx="4" fill="white" opacity="0.6"/>
+  <rect x="140" y="196" width="22" height="22" rx="4" fill="white" opacity="0.3"/>
+  <!-- Side buttons -->
+  <rect x="16" y="100" width="5" height="40" rx="2.5" fill="#A08060"/>
+  <rect x="16" y="148" width="5" height="26" rx="2.5" fill="#A08060"/>
+  <rect x="259" y="120" width="5" height="60" rx="2.5" fill="#A08060"/>
+  <!-- Bottom bar -->
+  <rect x="110" y="296" width="60" height="5" rx="2.5" fill="#333"/>
+  <defs>
+    <linearGradient id="iphoneGrad" x1="20" y1="8" x2="260" y2="332" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#D4A574"/>
+      <stop offset="50%" stop-color="#C88B4A"/>
+      <stop offset="100%" stop-color="#B07030"/>
+    </linearGradient>
+  </defs>
+</svg>
