@@ -3,10 +3,14 @@ interface ProboxLogoProps {
   size?: "sm" | "md" | "lg";
 }
 
-export default function ProboxLogo({ variant = "dark", size = "md" }: ProboxLogoProps) {
+export default function ProboxLogo({
+  variant = "dark",
+  size = "md",
+}: ProboxLogoProps) {
   const iconSize = size === "sm" ? 28 : size === "lg" ? 48 : 36;
   const textColor = variant === "light" ? "#ffffff" : "#0f172a";
   const subTextColor = variant === "light" ? "#94a3b8" : "#64748b";
+  const fontSize = size === "sm" ? "text-base" : size === "lg" ? "text-xl" : "text-lg";
 
   return (
     <div className="flex items-center gap-2">
@@ -17,28 +21,54 @@ export default function ProboxLogo({ variant = "dark", size = "md" }: ProboxLogo
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect width="48" height="48" rx="8" fill="#1a56db" />
-        {/* Probox puzzle-piece style P icon */}
-        <path
-          d="M14 12h12c4.418 0 8 3.582 8 8s-3.582 8-8 8H20v8h-6V12z"
+        <rect width="48" height="48" rx="10" fill="#1a8fc4" />
+        <rect x="10" y="10" width="11" height="11" rx="2.5" fill="white" />
+        <rect
+          x="23"
+          y="10"
+          width="11"
+          height="11"
+          rx="2.5"
           fill="white"
-          opacity="0.15"
+          opacity="0.6"
         />
-        <rect x="11" y="11" width="9" height="9" rx="2" fill="white" />
-        <rect x="22" y="11" width="9" height="9" rx="2" fill="white" opacity="0.6" />
-        <rect x="11" y="22" width="9" height="9" rx="2" fill="white" opacity="0.6" />
-        <rect x="22" y="22" width="9" height="9" rx="2" fill="white" opacity="0.3" />
-        <rect x="33" y="28" width="4" height="9" rx="2" fill="white" opacity="0.5" />
+        <rect
+          x="10"
+          y="23"
+          width="11"
+          height="11"
+          rx="2.5"
+          fill="white"
+          opacity="0.6"
+        />
+        <rect
+          x="23"
+          y="23"
+          width="11"
+          height="11"
+          rx="2.5"
+          fill="white"
+          opacity="0.3"
+        />
+        <rect
+          x="36"
+          y="27"
+          width="5"
+          height="11"
+          rx="2.5"
+          fill="white"
+          opacity="0.45"
+        />
       </svg>
-      <div className="flex flex-col leading-tight">
+      <div className="flex flex-col leading-none">
         <span
-          className="font-bold text-lg tracking-tight"
-          style={{ color: textColor, lineHeight: "1.1" }}
+          className={`font-bold ${fontSize} tracking-tight`}
+          style={{ color: textColor }}
         >
           Probox
         </span>
         <span
-          className="text-[9px] font-medium tracking-wide uppercase"
+          className="text-[8px] font-medium tracking-widest uppercase mt-0.5"
           style={{ color: subTextColor }}
         >
           Where Experts Meet

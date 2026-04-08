@@ -1,37 +1,69 @@
-<svg width="400" height="220" viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="220" fill="#f8fafc"/>
-  <!-- Background -->
-  <rect width="400" height="220" fill="url(#boxBg)"/>
-  <!-- iPhone box left -->
-  <rect x="80" y="50" width="90" height="140" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
-  <rect x="80" y="50" width="90" height="40" rx="6" fill="#1e293b"/>
-  <rect x="80" y="80" width="90" height="10" rx="0" fill="#1e293b"/>
-  <!-- Apple logo on box -->
-  <circle cx="125" cy="68" r="10" fill="white" opacity="0.2"/>
-  <text x="119" y="73" font-size="14" fill="white" font-family="Arial">🍎</text>
-  <!-- iPhone box text lines -->
-  <rect x="95" y="105" width="60" height="5" rx="2.5" fill="#94a3b8"/>
-  <rect x="100" y="116" width="50" height="4" rx="2" fill="#cbd5e1"/>
-  <rect x="105" y="127" width="40" height="4" rx="2" fill="#cbd5e1"/>
-  <!-- Second box slightly offset -->
-  <rect x="195" y="40" width="100" height="150" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
-  <rect x="195" y="40" width="100" height="45" rx="6" fill="#0f172a"/>
-  <rect x="195" y="75" width="100" height="10" rx="0" fill="#0f172a"/>
-  <!-- Apple logo on second box -->
-  <circle cx="245" cy="60" r="12" fill="white" opacity="0.15"/>
-  <text x="239" y="67" font-size="16" fill="white" font-family="Arial">🍎</text>
-  <!-- Second box content -->
-  <rect x="210" y="100" width="70" height="5" rx="2.5" fill="#94a3b8"/>
-  <rect x="215" y="112" width="60" height="4" rx="2" fill="#cbd5e1"/>
-  <rect x="220" y="123" width="50" height="4" rx="2" fill="#cbd5e1"/>
-  <!-- Small iPhone in front -->
-  <rect x="230" y="130" width="50" height="90" rx="8" fill="#1e293b" opacity="0.9"/>
-  <rect x="235" y="136" width="40" height="72" rx="6" fill="#0f172a"/>
-  <rect x="244" y="140" width="22" height="7" rx="3.5" fill="#1e293b"/>
+<svg width="500" height="320" viewBox="0 0 500 320" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="boxBg" x1="0" y1="0" x2="400" y2="220" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#f8fafc"/>
-      <stop offset="100%" stop-color="#f1f5f9"/>
+    <linearGradient id="boxBgGrad" x1="0" y1="0" x2="500" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
     </linearGradient>
+    <filter id="boxShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+    <filter id="iphoneShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
   </defs>
+
+  <!-- Background -->
+  <rect width="500" height="320" fill="url(#boxBgGrad)"/>
+
+  <!-- Main iPhone box -->
+  <g filter="url(#boxShadow)" transform="translate(80, 30)">
+    <!-- Box body -->
+    <rect x="0" y="0" width="160" height="240" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <!-- Box lid (dark top) -->
+    <rect x="0" y="0" width="160" height="70" rx="8" fill="#1e293b"/>
+    <rect x="0" y="60" width="160" height="20" fill="#1e293b"/>
+    <!-- Apple logo -->
+    <path d="M80 25 C78 18, 84 14, 88 14 C88 14, 88 18, 84 22 Z" fill="rgba(255,255,255,0.4)"/>
+    <path d="M80 25 C72 25, 66 32, 66 40 C66 52, 76 58, 80 58 C84 58, 94 52, 94 40 C94 32, 88 25, 80 25 Z" fill="rgba(255,255,255,0.3)"/>
+    <!-- iPhone text on box -->
+    <text x="80" y="100" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="300" fill="#64748b" letter-spacing="1">iPhone</text>
+    <!-- Model info -->
+    <rect x="40" y="116" width="80" height="4" rx="2" fill="#cbd5e1"/>
+    <rect x="50" y="126" width="60" height="3" rx="1.5" fill="#e2e8f0"/>
+    <!-- Box image area -->
+    <rect x="20" y="145" width="120" height="80" rx="6" fill="#f8fafc"/>
+    <rect x="50" y="155" width="60" height="60" rx="10" fill="#e2e8f0"/>
+    <rect x="58" y="160" width="44" height="50" rx="8" fill="#cbd5e1"/>
+  </g>
+
+  <!-- Second iPhone box (offset, slightly behind) -->
+  <g filter="url(#boxShadow)" transform="translate(260, 15)">
+    <rect x="0" y="0" width="170" height="260" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <rect x="0" y="0" width="170" height="75" rx="8" fill="#0f172a"/>
+    <rect x="0" y="65" width="170" height="20" fill="#0f172a"/>
+    <!-- Apple logo -->
+    <path d="M85 28 C83 21, 89 17, 93 17 C93 17, 93 21, 89 25 Z" fill="rgba(255,255,255,0.4)"/>
+    <path d="M85 28 C77 28, 71 35, 71 43 C71 55, 81 61, 85 61 C89 61, 99 55, 99 43 C99 35, 93 28, 85 28 Z" fill="rgba(255,255,255,0.3)"/>
+    <!-- iPhone text -->
+    <text x="85" y="108" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="300" fill="#64748b" letter-spacing="1">iPhone</text>
+    <text x="85" y="128" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#94a3b8">17 Pro Max</text>
+    <!-- Box image -->
+    <rect x="25" y="148" width="120" height="90" rx="6" fill="#f8fafc"/>
+    <rect x="52" y="156" width="66" height="74" rx="12" fill="#e2e8f0"/>
+    <rect x="60" y="162" width="50" height="62" rx="10" fill="#cbd5e1"/>
+  </g>
+
+  <!-- Small iPhone in front -->
+  <g filter="url(#iphoneShadow)" transform="translate(350, 140)">
+    <rect x="0" y="0" width="80" height="160" rx="14" fill="#1e293b"/>
+    <rect x="4" y="8" width="72" height="144" rx="12" fill="#0f172a"/>
+    <!-- Dynamic Island -->
+    <rect x="22" y="14" width="36" height="10" rx="5" fill="#1e293b"/>
+    <!-- Screen content -->
+    <text x="40" y="52" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#fff">9:41</text>
+    <rect x="14" y="65" width="52" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
+    <rect x="14" y="75" width="40" height="3" rx="1.5" fill="rgba(255,255,255,0.1)"/>
+    <!-- Home indicator -->
+    <rect x="24" y="144" width="32" height="3" rx="1.5" fill="rgba(255,255,255,0.3)"/>
+  </g>
 </svg>
