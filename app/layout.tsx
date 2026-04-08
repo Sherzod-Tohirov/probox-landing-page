@@ -3,7 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Probox – Where Experts Meet",
-  description: "Atiga 1 000 000 so'm boshlang'ich to'lov bilan Iphone 17 ga ega bo'ling",
+  description:
+    "Atiga 1 000 000 so'm boshlang'ich to'lov bilan Iphone 17 ga ega bo'ling",
 };
 
 export default function RootLayout({
